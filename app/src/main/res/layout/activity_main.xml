@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"> <!-- Dark background -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Speedometer"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#fffff1"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Card for Latitude -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        cardview:cardCornerRadius="12dp"
+        cardview:cardElevation="6dp"
+        android:backgroundTint="#1E1E1E">
+
+        <TextView
+            android:id="@+id/latitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="#BB86FC" /> <!-- Purple accent -->
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Longitude -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        cardview:cardCornerRadius="12dp"
+        cardview:cardElevation="6dp"
+        android:backgroundTint="#1E1E1E">
+
+        <TextView
+            android:id="@+id/longitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="#03DAC5" /> <!-- Teal accent -->
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Speed -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardCornerRadius="12dp"
+        cardview:cardElevation="6dp"
+        android:backgroundTint="#1E1E1E">
+
+        <TextView
+            android:id="@+id/speedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed: "
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textColor="#CF6679" /> <!-- Red accent -->
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
